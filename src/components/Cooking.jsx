@@ -29,7 +29,7 @@ const Cooking = ({ preparing, removeFromPreparing }) => {
   };
 
   return (
-    <div className="w-[40%] border rounded-xl p-8">
+    <div className="lg:w-[40%] w-full border rounded-xl p-8">
       {/* preparing To Cook */}
       <div>
         <h2 className="text-2xl font-bold text-center">

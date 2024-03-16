@@ -16,13 +16,13 @@ const Card = ({ item, addToPreparing }) => {
       <img
         src={recipe_image}
         alt="img"
-        className="object-cover w-full rounded-xl h-72"
+        className="object-cover w-full h-56 rounded-xl"
       />
       <h4 className="my-4 text-2xl font-medium text-[#282828]">
         {recipe_name}
       </h4>
       <p className="text-[#878787] text-xl">{short_description}</p>
-      <hr className="my-8" />
+      <hr className="my-5" />
 
       <h4 className="text-xl font-medium">Ingredients: {ingredients.length}</h4>
       <ul className="mt-2 ml-5 space-y-2 text-gray-600 list-disc">
@@ -31,7 +31,7 @@ const Card = ({ item, addToPreparing }) => {
         })}
       </ul>
 
-      <hr className="my-8" />
+      <hr className="my-5" />
 
       <div className="flex items-center gap-5">
         <div className="flex items-center gap-2">
