@@ -1,11 +1,18 @@
 import Card from "./Card";
 
-const Recipe = () => {
+const Recipe = ({ recipes, addToPreparing }) => {
   return (
-    <div className="w-[70%]">
+    <div className="w-[60%]">
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-        <Card />
-        <Card />
+        {recipes.map((item) => {
+          return (
+            <Card
+              key={item.recipe_id}
+              item={item}
+              addToPreparing={addToPreparing}
+            />
+          );
+        })}
       </div>
     </div>
   );

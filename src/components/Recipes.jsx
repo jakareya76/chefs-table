@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
 
+import { toast } from "react-toastify";
+
 import Recipe from "./Recipe";
 import Cooking from "./Cooking";
 
 const Recipes = () => {
   const [recipes, setRecipes] = useState([]);
+  const [preparing, setPreparing] = useState([]);
 
   useEffect(() => {
     const getRecipesData = async () => {
@@ -16,6 +19,28 @@ const Recipes = () => {
 
     getRecipesData();
   }, []);
+
+  const addToPreparing = (item) => {
+    const isExist = preparing.find(
+      (existingItem) => existingItem.recipe_id === item.recipe_id
+    );
+
+    if (!isExist) {
+      setPreparing((prev) => {
+        return [...prev, item];
+      });
+    } else {
+      toast("Already Exist");
+    }
+  };
+
+  const removeFromPreparing = (id) => {
+    setPreparing((prev) => {
+      return prev.filter((item) => {
+        return item.recipe_id !== id;
+      });
+    });
+  };
 
   return (
     <div className="container py-20 mx-auto">
@@ -29,8 +54,11 @@ const Recipes = () => {
       </div>
 
       <div className="flex flex-col justify-center gap-8 md:flex-row">
-        <Recipe />
-        <Cooking />
+        <Recipe recipes={recipes} addToPreparing={addToPreparing} />
+        <Cooking
+          preparing={preparing}
+          removeFromPreparing={removeFromPreparing}
+        />
       </div>
     </div>
   );
