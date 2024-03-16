@@ -46,10 +46,11 @@ const Recipes = () => {
     <div className="container py-20 mx-auto">
       <div className="mb-10 text-center">
         <h2 className="text-5xl font-bold text-[#150B2B]">Our Recipes</h2>
-        <p className="my-4 text-gray-500">
-          Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus
-          vulputate netus pharetra rhoncus. Eget urna <br /> volutpat curabitur
-          elementum mauris aenean neque.
+        <p className="my-4 text-gray-500 max-w-[900px] mx-auto">
+          Welcome to Recipe Calories, where culinary delights meet
+          health-conscious choices! Dive into our treasure trove of recipes and
+          discover an exceptional cooking class tailored just for you. Whether
+          you're a seasoned chef or a kitchen novice
         </p>
       </div>
 
