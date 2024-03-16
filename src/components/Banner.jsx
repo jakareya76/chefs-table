@@ -1,6 +1,6 @@
 const Banner = () => {
   return (
-    <div className="container flex items-center justify-center mx-auto">
+    <div className="container flex items-center justify-center p-5 mx-auto">
       <div
         className="flex items-center justify-center bg-center bg-cover w-full h-[580px] p-50 rounded-3xl"
         style={{ backgroundImage: `url('/banner.png')` }}
@@ -14,7 +14,7 @@ const Banner = () => {
             Database and solve 500+ coding problems to become an exceptionally
             well world-class Programmer.
           </p>
-          <div className="flex flex-col items-center justify-center gap-8 md:flex-row">
+          <div className="flex items-center justify-center gap-8">
             <button className="px-6 py-3 text-[#150B2B] font-medium bg-green-600 rounded-full">
               Explore Now
             </button>
