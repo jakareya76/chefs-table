@@ -1,10 +1,16 @@
 import { useState } from "react";
 
 import { CiSearch } from "react-icons/ci";
-import { CgProfile } from "react-icons/cg";
-import { FaBars } from "react-icons/fa";
+import { CgProfile, CgMenuRight } from "react-icons/cg";
+import { LiaTimesSolid } from "react-icons/lia";
 
 const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const handleToggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
     <nav className="container flex items-center justify-between px-5 py-8 mx-auto">
       <div>
@@ -35,7 +41,24 @@ const Navbar = () => {
       </div>
 
       <div className="flex md:hidden">
-        <FaBars size={24} />
+        {showMenu ? (
+          <LiaTimesSolid size={55} onClick={handleToggleMenu} />
+        ) : (
+          <CgMenuRight size={55} onClick={handleToggleMenu} />
+        )}
+
+        <div className="relative w-full mt-10">
+          {showMenu && (
+            <div className="absolute right-0 px-10 py-5 rounded-xl bg-fuchsia-50">
+              <ul className="flex flex-col gap-3">
+                <li className="text-[#150b2bd0] font-medium">Home</li>
+                <li className="text-[#150b2bd0] font-medium">Recipes</li>
+                <li className="text-[#150b2bd0] font-medium">About</li>
+                <li className="text-[#150b2bd0] font-medium">Search</li>
+              </ul>
+            </div>
+          )}
+        </div>
       </div>
     </nav>
   );
