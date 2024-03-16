@@ -11,7 +11,7 @@
     ],
     "preparing_time": "30 min",
     "calories": "320 calories",
-    "recipe_image": "spicy_basil_chicken.jpg"
+    "recipe_image": "https://images.pexels.com/photos/7758253/pexels-photo-7758253.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     "recipe_id": "2",
@@ -25,7 +25,7 @@
     ],
     "preparing_time": "40 min",
     "calories": "380 calories",
-    "recipe_image": "mushroom_risotto.jpg"
+    "recipe_image": "https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     "recipe_id": "3",
@@ -39,7 +39,7 @@
     ],
     "preparing_time": "15 min",
     "calories": "180 calories",
-    "recipe_image": "caprese_salad.jpg"
+    "recipe_image": "https://images.pexels.com/photos/16946668/pexels-photo-16946668/free-photo-of-salad-meal-on-plate.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     "recipe_id": "4",
@@ -53,7 +53,7 @@
     ],
     "preparing_time": "25 min",
     "calories": "250 calories",
-    "recipe_image": "vegetable_stir_fry.jpg"
+    "recipe_image": "https://images.pexels.com/photos/5848472/pexels-photo-5848472.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     "recipe_id": "5",
@@ -68,7 +68,7 @@
     ],
     "preparing_time": "35 min",
     "calories": "420 calories",
-    "recipe_image": "homemade_pizza.jpg"
+    "recipe_image": "https://images.pexels.com/photos/4109128/pexels-photo-4109128.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     "recipe_id": "6",
@@ -84,6 +84,6 @@
     ],
     "preparing_time": "20 min",
     "calories": "150 calories",
-    "recipe_image": "chocolate_chip_cookies.jpg"
+    "recipe_image": "https://images.pexels.com/photos/3186743/pexels-photo-3186743.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   }
 ]

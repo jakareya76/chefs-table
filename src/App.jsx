@@ -1,7 +1,12 @@
+import Navbar from "./components/Navbar";
+import Banner from "./components/Banner";
+
 const App = () => {
   return (
     <>
-      <h1>CHEFS-TABLE</h1>
+      <Navbar />
+
+      <Banner />
     </>
   );
 };
